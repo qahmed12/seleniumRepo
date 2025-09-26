@@ -19,8 +19,8 @@ public class BrowserTest {
 	{
 		System.out.println("Hello Guys");
 		
-		 WebDriverManager.chromedriver().setup();
-         WebDriver driver =new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
+        WebDriver driver =new ChromeDriver();
 		driver.get("https://rahylshettyacademy.azurewebsites.net/webapp/");
 		String text =driver.findElement(By.cssSelector("h1")).getText();
 		System.out.println(text);
